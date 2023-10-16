@@ -2,26 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-primary font-montserrat text-white;
+}
+
+.pretitle {
+  @apply font-alexBrush text-[42px] text-accent-default leading-none;
+}
+
+.h2 {
+  @apply text-[32px] xl:text-[38px] font-semibold leading-tight;
+}
+
+.btn {
+  @apply w-full rounded-full cursor-pointer transition-all duration-300 flex justify-center items-center font-medium;
+}
+
+.btb-sm {
+  @apply w-[146px] h-[50px];
+}
+
+.btb-lg {
+  @apply w-[160px] h-[54px];
+}
+
+.btn-accent {
+  @apply bg-accent-default text-white hover:bg-accent-hover;
+}
+
+.btn-white {
+  @apply bg-white text-primary hover:bg-white/80;
+}
+
+.section {
+  @apply py-12 xl:py-24;
 }
