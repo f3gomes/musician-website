@@ -15,9 +15,9 @@ const config: Config = {
     },
     screens: {
       sm: "640px",
-      md: "768",
+      md: "768px",
       lg: "960px",
-      xl: "1310",
+      xl: "1310px",
     },
     extend: {
       backgroundImage: {

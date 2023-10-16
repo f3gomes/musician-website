@@ -18,11 +18,11 @@ body {
   @apply w-full rounded-full cursor-pointer transition-all duration-300 flex justify-center items-center font-medium;
 }
 
-.btb-sm {
+.btn-sm {
   @apply w-[146px] h-[50px];
 }
 
-.btb-lg {
+.btn-lg {
   @apply w-[160px] h-[54px];
 }
 

@@ -2,6 +2,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Alex_Brush, Montserrat } from "next/font/google";
 
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+
 const alexBrush = Alex_Brush({
   weight: ["400"],
   subsets: ["latin"],
@@ -29,7 +32,9 @@ export default function RootLayout({
       <body
         className={`${alexBrush.variable} ${montserrat.variable} overflow-x-hidden relative`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
