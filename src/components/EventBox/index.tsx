@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { EventCard } from "../EventCard";
+import { fadeIn } from "@/utils/variants";
 
 interface EventBoxProps {
   events: IEvent[];
@@ -28,7 +29,13 @@ export interface IEventLocation {
 
 export function EventBox({ events }: EventBoxProps) {
   return (
-    <div className="bg-secondary/60 rounded-[10px] p-4 xl:p-12 relative">
+    <motion.div
+      variants={fadeIn("up", 0.4)}
+      initial={"hidden"}
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.3 }}
+      className="bg-secondary/60 rounded-[10px] p-4 xl:p-12 relative"
+    >
       <div className="flex flex-col xl:flex-row justify-between h-[620px] xl:h-full gap-x-4">
         <div className="hidden xl:flex w-[400px]">
           <Image
@@ -54,6 +61,6 @@ export function EventBox({ events }: EventBoxProps) {
           })}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

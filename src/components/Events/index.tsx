@@ -1,4 +1,4 @@
-import { data } from "../../../../_data/db.js";
+import { data } from "../../../_data/db.ts";
 import { EventBox } from "@/components/EventBox/index.tsx";
 
 export function Events() {

@@ -35,6 +35,7 @@ const config: Config = {
         accent: {
           default: "#7f1cfc",
           hover: "#6519c6",
+          focus: "#5214a3",
         },
       },
     },

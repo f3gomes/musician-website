@@ -27,7 +27,7 @@ body {
 }
 
 .btn-accent {
-  @apply bg-accent-default text-white hover:bg-accent-hover;
+  @apply bg-accent-default text-white hover:bg-accent-hover focus:bg-accent-focus;
 }
 
 .btn-white {
