@@ -44,7 +44,7 @@ export function Hero() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-[300px] h-[101.37px] xl:w-[725px] xl:h-[244.97px]"
+                className="w-[300px] h-[101.37px] xl:w-[725px] xl:h-[244.97px] relative"
               >
                 <Image
                   src={"/assets/hero/typo-1.svg"}
@@ -65,7 +65,7 @@ export function Hero() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-[300px] h-[101.37px] xl:w-[625px] xl:h-[244.97px]"
+                className="w-[300px] h-[101.37px] xl:w-[625px] xl:h-[244.97px] relative"
               >
                 <Image
                   src={"/assets/hero/typo-2.svg"}
@@ -86,13 +86,14 @@ export function Hero() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-[150px] h-[100px] xl:w-[248px] xl:h-[200px] mix-blend-luminosity"
+                className="w-[150px] h-[100px] xl:w-[248px] xl:h-[200px] mix-blend-luminosity relative  "
               >
                 <Image
                   src={"/assets/hero/bird.png"}
                   alt="Bird"
                   fill
                   className="object-contain"
+                  sizes="(with: auto)"
                 />
               </motion.div>
             </MouseParallaxChild>
