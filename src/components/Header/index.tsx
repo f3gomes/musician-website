@@ -1,14 +1,9 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 interface HeaderProps {
   children?: ReactNode;
 }
 
 export function Header({ children }: HeaderProps) {
-  return (
-    <>
-      <h1>Header</h1>
-      {children}
-    </>
-  );
+  return <header className="fixed z-50 w-full">Header</header>;
 }
