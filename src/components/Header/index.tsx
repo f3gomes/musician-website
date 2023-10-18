@@ -1,15 +1,15 @@
 "use client";
 
-import { ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { Nav } from "../Nav";
+import { MenuBtn } from "../MenuBtn";
+import { Socials } from "../Socials";
+import { NavMobile } from "../NavMobile";
 
-interface HeaderProps {
-  children?: ReactNode;
-}
-
-export function Header({ children }: HeaderProps) {
+export function Header() {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
@@ -26,8 +26,8 @@ export function Header({ children }: HeaderProps) {
 
   return (
     <header
-      className={`fixed z-50 w-full ${
-        active ? "bg-[#030315] py-6" : "bg-transparent py-8"
+      className={`fixed z-50 w-full transition-all ${
+        active ? "bg-[#030315] py-6 " : "bg-transparent py-8 "
       }`}
     >
       <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between">
@@ -43,13 +43,20 @@ export function Header({ children }: HeaderProps) {
           />
         </Link>
 
-        <nav>Nav</nav>
+        <Nav containerStyles={"hidden xl:flex items-center gap-x-8"} />
 
-        <nav>Nav mobile</nav>
+        <nav className="hidden">Nav mobile</nav>
 
-        <div>Menu btn</div>
+        <div className="absolute right-7 bg-red-400 top-9 z-10 xl:hidden">
+          <MenuBtn />
+        </div>
 
-        <div>Social icons</div>
+        <NavMobile />
+
+        <Socials
+          containerStyles="flex text-[24px] gap-x-4"
+          iconStyles="hover:text-accent-default transition-all duration-300"
+        />
       </div>
     </header>
   );
