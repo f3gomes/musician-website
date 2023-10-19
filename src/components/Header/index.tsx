@@ -45,9 +45,7 @@ export function Header() {
 
         <Nav containerStyles={"hidden xl:flex items-center gap-x-8"} />
 
-        <nav className="hidden">Nav mobile</nav>
-
-        <div className="absolute right-7 bg-red-400 top-9 z-10 xl:hidden">
+        <div className="absolute right-7 top-9 z-10 xl:hidden">
           <MenuBtn />
         </div>
 
