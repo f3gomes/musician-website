@@ -1,4 +1,5 @@
 import { Albums } from "@/components/Albums";
+import { Blog } from "@/components/Blog";
 import { Events } from "@/components/Events";
 import { Hero } from "@/components/Hero";
 import { Player } from "@/components/Player";
@@ -10,6 +11,7 @@ export default function Home() {
       <Player />
       <Events />
       <Albums />
+      <Blog />
       <div className="h-[700px]"></div>
     </main>
   );

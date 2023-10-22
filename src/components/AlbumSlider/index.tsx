@@ -1,7 +1,7 @@
 "use client";
 import { data } from "../../../_data/db";
 
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import { Navigation, FreeMode, Thumbs, EffectCoverflow } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
@@ -14,11 +14,7 @@ import Image from "next/image";
 import { AlbumCard } from "../AlbumCard";
 import { breakpointsObject } from "@/utils/breakpoints";
 
-interface AlbumSliderProps {
-  children?: ReactNode;
-}
-
-export function AlbumSlider({ children }: AlbumSliderProps) {
+export function AlbumSlider() {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   return (
