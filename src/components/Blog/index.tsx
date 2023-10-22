@@ -7,7 +7,6 @@ export function Blog() {
     <section className="section" id="blog">
       <div className="container mx-auto">
         <SectionHeader pretitle="Our Blog" title="Latest News" />
-
         <PostList posts={data.posts} />
       </div>
     </section>

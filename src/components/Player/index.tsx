@@ -33,12 +33,12 @@ export function Player() {
             </div>
           </div>
 
-          <div className="w-full max-w-4xl">
+          <div className="w-full max-w-4xl xs:max-w-xs">
             <AudioPlayer
               loop
               preload="none"
               color="#fff"
-              volume={10}
+              volume={30}
               volumePlacement="top"
               src="/assets/freedom.mp3"
               style={{

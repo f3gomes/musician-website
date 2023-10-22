@@ -25,7 +25,7 @@ export function PostList({ posts }: PostListProps) {
       viewport={{ once: false, amount: 0.3 }}
       className="flex flex-col items-center"
     >
-      <div className="flex flex-col xl:flex-row justify-between gap-12 py-10 xl:pt-16 xl:pb-24 border-t border-white/10">
+      <div className="flex flex-col xl:flex-row justify-between gap-12 py-10 xl:pt-16 xl:pb-24 border-t border-white/10 xs:max-w-sm">
         {firstThreePosts.map((post) => {
           const { id, date, title, description } = post;
           return (

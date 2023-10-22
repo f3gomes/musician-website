@@ -17,13 +17,12 @@ export function Newsletter() {
             title="Sign up to our newsletter"
           />
 
-          <motion.form
+          <motion.div
             variants={fadeIn("up", 0.4)}
             initial={"hidden"}
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="relative flex items-center w-full max-w-xl"
-            action={"#"}
           >
             <input
               name="email"
@@ -38,7 +37,7 @@ export function Newsletter() {
             >
               Subscribe
             </button>
-          </motion.form>
+          </motion.div>
         </div>
       </div>
     </section>

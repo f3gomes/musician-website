@@ -44,7 +44,7 @@ export function AlbumCard({ album }: AlbumCardProps) {
                     loop
                     preload="none"
                     color="#fff"
-                    volume={10}
+                    volume={30}
                     volumePlacement="bottom"
                     className="album-player"
                     style={{
