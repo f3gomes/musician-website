@@ -92,7 +92,7 @@ export const data = {
       priceRange: "40-150$",
     },
   ],
-  albuns: [
+  albums: [
     {
       id: 1,
       img: "/assets/albums/cover/cover-1.png",

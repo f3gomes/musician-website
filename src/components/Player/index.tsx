@@ -38,7 +38,7 @@ export function Player() {
               loop
               preload="none"
               color="#fff"
-              volume={40}
+              volume={10}
               volumePlacement="top"
               src="/assets/freedom.mp3"
               style={{

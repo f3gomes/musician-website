@@ -95,3 +95,45 @@ body {
 .active {
   @apply border-b-2 border-accent-default;
 }
+
+.album-slider .rap-container .rap-volume .rap-volume-controls {
+  @apply !bg-accent-default;
+}
+
+.album-slider .rap-container .rap-slider {
+  @apply !bg-primary/40;
+}
+
+.album-slider .rap.container .rap-slider .rap-progress {
+  @apply !bg-white;
+}
+
+.album-slider .rap-container .rap-pp-button svg {
+  @apply w-[12px];
+}
+
+.album-slider .rap-container .rap-volume .rap-volume-btn svg {
+  @apply w-[20px];
+}
+
+.album-slider .rap-container .rap-pp-button svg path,
+.album-slider .rap-container .rap-volume .rap-volume .rap-volume-btn svg path {
+  @apply fill-accent-default;
+}
+
+.album-slider .rap-container .rap-controls span {
+  @apply !text-sm;
+}
+
+.album-player {
+  @apply !w-[110px] !min-w-0 text-center;
+}
+
+.album-player .rap-controls .rap-slider,
+.album-player .rap-controls .rap-total-time {
+  @apply hidden;
+}
+
+.thumb-slider .swiper-slide-thumb-active {
+  @apply border-2 border-accent-default overflow-hidden transition-all duration-700;
+}
