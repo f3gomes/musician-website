@@ -37,7 +37,8 @@ export function Header() {
         >
           <Image
             src={"/assets/header/logo.svg"}
-            alt=""
+            alt="logo"
+            priority
             fill
             className="object-contain"
           />

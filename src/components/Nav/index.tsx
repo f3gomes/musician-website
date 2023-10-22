@@ -1,3 +1,7 @@
+"use client";
+
+import { NavContext } from "@/context/NavContext";
+import { MouseEvent, useContext } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-scroll";
 
@@ -36,6 +40,13 @@ const links = [
 ];
 
 export function Nav({ containerStyles, linkStyles }: NavProps) {
+  const { setIsOpen } = useContext(NavContext);
+
+  const handleOnClick = (e: MouseEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    setIsOpen(false);
+  };
+
   const isDesktop = useMediaQuery({
     query: "(min-width: 1310px)",
   });
@@ -53,7 +64,7 @@ export function Nav({ containerStyles, linkStyles }: NavProps) {
             offset={-50}
             activeClass="active"
           >
-            {link.name}
+            <div onClick={handleOnClick}>{link.name}</div>
           </Link>
         );
       })}

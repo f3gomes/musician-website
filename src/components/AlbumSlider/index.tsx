@@ -77,6 +77,7 @@ export function AlbumSlider() {
                   fill
                   priority
                   alt="Cover"
+                  sizes="100%"
                   className="object-contain group-hover:scale-105 transition-all duration-300"
                 />
               </div>

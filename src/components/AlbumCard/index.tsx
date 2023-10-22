@@ -23,7 +23,8 @@ export function AlbumCard({ album }: AlbumCardProps) {
           src={album.img}
           fill
           priority
-          alt=""
+          alt="cover"
+          sizes="100%"
           className="object-contain"
         />
       </div>
