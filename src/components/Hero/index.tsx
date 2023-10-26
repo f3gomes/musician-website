@@ -9,19 +9,7 @@ import {
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/variants";
 import { TypeAnimation } from "react-type-animation";
-
-const locationSequence = [
-  "Los Angeles - USA",
-  3000,
-  "Rio de Janeiro, Brazil",
-  3000,
-  "Paris, France",
-  3000,
-  "Berlin, Germany",
-  3000,
-  "Athens, Grace",
-  3000,
-];
+import { locationSequence } from "../../../_data/db";
 
 export function Hero() {
   return (
@@ -50,6 +38,7 @@ export function Hero() {
                   src={"/assets/hero/typo-1.svg"}
                   alt="Artist name"
                   fill
+                  priority
                   className="object-contain"
                 />
               </motion.div>
@@ -157,6 +146,7 @@ export function Hero() {
             height={893}
             quality={100}
             priority
+            sizes="100%"
           />
         </motion.div>
       </div>
