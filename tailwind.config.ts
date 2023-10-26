@@ -38,6 +38,9 @@ const config: Config = {
           hover: "#6519c6",
           focus: "#5214a3",
         },
+        float: {
+          default: "#030315",
+        },
       },
     },
   },

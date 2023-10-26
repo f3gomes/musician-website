@@ -93,7 +93,7 @@ body {
 }
 
 .active {
-  @apply border-b-2 border-accent-default;
+  @apply border-b-2 text-accent-default border-accent-default font-medium;
 }
 
 .album-slider .rap-container .rap-volume .rap-volume-controls {

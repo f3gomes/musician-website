@@ -56,13 +56,13 @@ export function Nav({ containerStyles, linkStyles }: NavProps) {
       {links.map((link: linkProps) => {
         return (
           <Link
-            key={link.id}
-            to={link.path}
-            className={`${linkStyles} cursor-pointer border-b-2 border-transparent`}
-            smooth={!isDesktop ? false : true}
             spy
             offset={-50}
+            key={link.id}
+            to={link.path}
             activeClass="active"
+            smooth={!isDesktop ? false : true}
+            className={`${linkStyles} cursor-pointer hover:text-accent-default border-b-2 border-transparent transition-all duration-300`}
           >
             <div onClick={handleOnClick}>{link.name}</div>
           </Link>

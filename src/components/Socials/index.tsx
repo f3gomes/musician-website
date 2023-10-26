@@ -21,26 +21,26 @@ interface SocialItem {
 const socials = [
   {
     id: 1,
-    path: "#",
+    path: "https://www.youtube.com/",
     icon: <RiYoutubeFill />,
     "data-testid": "social-youtube",
   },
   {
     id: 2,
-    path: "#",
+    path: "https://www.instagram.com/",
     icon: <RiInstagramFill />,
     "data-testid": "social-instagram",
   },
   {
     id: 3,
-    path: "#",
+    path: "https://www.spotify.com/",
     icon: <RiSpotifyFill />,
     "data-testid": "social-spotify",
   },
 
   {
     id: 4,
-    path: "#",
+    path: "https://soundcloud.com/",
     icon: <RiSoundcloudFill />,
     "data-testid": "social-soundcloud",
   },
@@ -55,6 +55,7 @@ export function Socials({ containerStyles, iconStyles }: SocialsProps) {
             key={item.id}
             href={item.path}
             data-testid={item["data-testid"]}
+            target="_blank"
           >
             <div className={`${iconStyles}`}>{item.icon}</div>
           </Link>
