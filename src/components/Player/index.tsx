@@ -5,6 +5,8 @@ import { AudioPlayer } from "react-audio-play";
 import Image from "next/image";
 import { fadeIn } from "@/utils/variants";
 
+import { musicianData } from "../../../_data/db";
+
 export function Player() {
   return (
     <>
@@ -28,7 +30,7 @@ export function Player() {
             </div>
 
             <div className="leading-none text-white">
-              <div className="text-lg font-medium">Mia Reynolds</div>
+              <div className="text-lg font-medium">{musicianData.name}</div>
               <div className="text-sm font-light">Freedom</div>
             </div>
           </div>

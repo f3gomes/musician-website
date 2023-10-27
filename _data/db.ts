@@ -16,114 +16,115 @@ export const data = {
     {
       id: 2,
       date: {
-        day: "02",
-        month: "Mar",
+        day: "10",
+        month: "Jul",
       },
       location: {
-        city: "Rio de Janeiro",
-        country: "Brazil",
-        address: "Sambadrome",
+        city: "Paris",
+        country: "França",
+        address: "Torre Eiffel",
       },
-      priceRange: "40-150$",
+      priceRange: "50-200€",
     },
     {
       id: 3,
       date: {
-        day: "10",
-        month: "May",
+        day: "20",
+        month: "Set",
       },
       location: {
-        city: "Paris",
-        country: "France",
-        address: "Eiffel Tower Park",
+        city: "Pequim",
+        country: "China",
+        address: "Grande Muralha da China",
       },
-      priceRange: "80-300$",
+      priceRange: "80-300¥",
     },
     {
       id: 4,
       date: {
-        day: "29",
+        day: "5",
         month: "Mar",
       },
       location: {
-        city: "Berlin",
-        country: "Germany",
-        address: "Berlin Hall",
+        city: "Sydney",
+        country: "Austrália",
+        address: "Ópera de Sydney",
       },
-      priceRange: "40-150$",
+      priceRange: "70-250$",
     },
     {
       id: 5,
       date: {
-        day: "02",
+        day: "8",
         month: "Jun",
       },
       location: {
-        city: "Athens",
-        country: "Greece",
-        address: "Acropolis Amphitheatre",
+        city: "Roma",
+        country: "Itália",
+        address: "Coliseu",
       },
-      priceRange: "40-150$",
+      priceRange: "55-220€",
     },
     {
       id: 6,
       date: {
-        day: "02",
-        month: "May",
+        day: "12",
+        month: "Abr",
       },
       location: {
-        city: "Bucharest",
-        country: "Romania",
-        address: "National Arena",
+        city: "Siem Reap",
+        country: "Camboja",
+        address: "Templo de Angkor Wat",
       },
-      priceRange: "40-150$",
+      priceRange: "40-180$",
     },
     {
       id: 7,
       date: {
-        day: "02",
-        month: "Nov",
+        day: "25",
+        month: "Out",
       },
       location: {
-        city: "Warsaw",
-        country: "Poland",
-        address: "PGE Narodowy",
+        city: "Atenas",
+        country: "Grécia",
+        address: "Acrópole de Atenas",
       },
-      priceRange: "40-150$",
+      priceRange: "50-210€",
     },
   ],
+
   albums: [
     {
       id: 1,
       img: "/assets/albums/cover/cover-1.png",
-      name: "album 1",
+      name: "The Dark Side of the Moon",
       tracks: [
         {
-          name: "Serenade in D Major",
+          name: "Bohemian Rhapsody",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Midnight Lulaby",
+          name: "Shape of You",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Whispers of the Wind",
+          name: "Billie Jean",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Dance of the Fireflies",
+          name: "Hotel California",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Echoes of the Past",
+          name: "Sweet Child o' Mine",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Sunlight Serenity",
+          name: "Rolling in the Deep",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Misty Moonlight Melody",
+          name: "Stairway to Heaven",
           src: "assets/freedom.mp3",
         },
       ],
@@ -132,34 +133,34 @@ export const data = {
     {
       id: 2,
       img: "/assets/albums/cover/cover-2.png",
-      name: "album 2",
+      name: "Rumours",
       tracks: [
         {
-          name: "Serenade in D Major",
+          name: "Imagine",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Midnight Lulaby",
+          name: "Boys Don't Cry",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Whispers of the Wind",
+          name: "Purple Haze",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Dance of the Fireflies",
+          name: "Hello",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Echoes of the Past",
+          name: "Livin' on a Prayer",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Sunlight Serenity",
+          name: "Smooth",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Misty Moonlight Melody",
+          name: "Uptown Funk",
           src: "assets/freedom.mp3",
         },
       ],
@@ -168,7 +169,7 @@ export const data = {
     {
       id: 3,
       img: "/assets/albums/cover/cover-3.png",
-      name: "album 3",
+      name: "Thriller",
       tracks: [
         {
           name: "Serenade in D Major",
@@ -203,35 +204,35 @@ export const data = {
 
     {
       id: 4,
-      img: "/assets/albums/cover/cover-4.png",
-      name: "album 4",
+      img: "/assets/albums/cover/cover-1.png",
+      name: "The Dark Side of the Moon",
       tracks: [
         {
-          name: "Serenade in D Major",
+          name: "Bohemian Rhapsody",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Midnight Lulaby",
+          name: "Shape of You",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Whispers of the Wind",
+          name: "Billie Jean",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Dance of the Fireflies",
+          name: "Hotel California",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Echoes of the Past",
+          name: "Sweet Child o' Mine",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Sunlight Serenity",
+          name: "Rolling in the Deep",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Misty Moonlight Melody",
+          name: "Stairway to Heaven",
           src: "assets/freedom.mp3",
         },
       ],
@@ -239,35 +240,35 @@ export const data = {
 
     {
       id: 5,
-      img: "/assets/albums/cover/cover-5.png",
-      name: "album 5",
+      img: "/assets/albums/cover/cover-2.png",
+      name: "Rumours",
       tracks: [
         {
-          name: "Serenade in D Major",
+          name: "Imagine",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Midnight Lulaby",
+          name: "Boys Don't Cry",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Whispers of the Wind",
+          name: "Purple Haze",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Dance of the Fireflies",
+          name: "Hello",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Echoes of the Past",
+          name: "Livin' on a Prayer",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Sunlight Serenity",
+          name: "Smooth",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Misty Moonlight Melody",
+          name: "Uptown Funk",
           src: "assets/freedom.mp3",
         },
       ],
@@ -275,8 +276,8 @@ export const data = {
 
     {
       id: 6,
-      img: "/assets/albums/cover/cover-6.png",
-      name: "album 6",
+      img: "/assets/albums/cover/cover-3.png",
+      name: "Thriller",
       tracks: [
         {
           name: "Serenade in D Major",
@@ -311,45 +312,46 @@ export const data = {
 
     {
       id: 7,
-      img: "/assets/albums/cover/cover-7.png",
-      name: "album 7",
+      img: "/assets/albums/cover/cover-1.png",
+      name: "The Dark Side of the Moon",
       tracks: [
         {
-          name: "Serenade in D Major",
+          name: "Bohemian Rhapsody",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Midnight Lulaby",
+          name: "Shape of You",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Whispers of the Wind",
+          name: "Billie Jean",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Dance of the Fireflies",
+          name: "Hotel California",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Echoes of the Past",
+          name: "Sweet Child o' Mine",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Sunlight Serenity",
+          name: "Rolling in the Deep",
           src: "assets/freedom.mp3",
         },
         {
-          name: "Misty Moonlight Melody",
+          name: "Stairway to Heaven",
           src: "assets/freedom.mp3",
         },
       ],
     },
   ],
+
   posts: [
     {
       id: 1,
       date: "2023-09-21",
-      title: "Rock Concert at Central Park",
+      title: "Rock Show",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore a maiores molestiae veniam odio totam officia harum cum ratione est veritatis impedit suscipit atque enim et sed, quidem neque qui!",
     },
@@ -365,7 +367,7 @@ export const data = {
     {
       id: 3,
       date: "2023-09-23",
-      title: "EDM Extravaganza",
+      title: "Extra",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore a maiores molestiae veniam odio totam officia harum cum ratione est veritatis impedit suscipit atque enim et sed, quidem neque qui!",
     },
@@ -373,7 +375,7 @@ export const data = {
     {
       id: 4,
       date: "2023-09-24",
-      title: "Acounstic",
+      title: "Live",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore a maiores molestiae veniam odio totam officia harum cum ratione est veritatis impedit suscipit atque enim et sed, quidem neque qui!",
     },
@@ -395,14 +397,18 @@ export const data = {
 };
 
 export const locationSequence = [
-  "Los Angeles - USA",
+  "Roma - Itália",
   3000,
-  "Rio de Janeiro, Brazil",
+  "Pequim, China",
+  3000,
+  "Fortaleza, Brazil",
   3000,
   "Paris, France",
   3000,
   "Berlin, Germany",
   3000,
-  "Athens, Grace",
-  3000,
 ];
+
+export const musicianData = {
+  name: "Ellen Star",
+};

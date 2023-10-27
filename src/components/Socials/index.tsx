@@ -25,12 +25,14 @@ const socials = [
     icon: <RiYoutubeFill />,
     "data-testid": "social-youtube",
   },
+
   {
     id: 2,
     path: "https://www.instagram.com/",
     icon: <RiInstagramFill />,
     "data-testid": "social-instagram",
   },
+
   {
     id: 3,
     path: "https://www.spotify.com/",

@@ -1,15 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { Nav } from "../Nav";
-import { Socials } from "../Socials";
 import Image from "next/image";
+import { Nav } from "../Nav";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/variants";
+import { Socials } from "../Socials";
 
 export function Footer() {
   return (
-    <footer className="bg-accent-default section h-[500px] xl:h-auto">
+    <footer className="bg-accent-default/80 section h-[500px] xl:h-auto">
       <div className="container mx-auto flex flex-col items-center gap-y-8 h-full">
         <motion.div
           variants={fadeIn("up", 0.2)}
@@ -44,7 +44,7 @@ export function Footer() {
         >
           <Socials
             containerStyles="flex text-[24px] gap-x-8"
-            iconStyles="hover:text-primary/80 transition-all justify-center"
+            iconStyles="hover:text-primary/60 hover:scale-125 transition-all justify-center duration-300"
           />
         </motion.div>
 
