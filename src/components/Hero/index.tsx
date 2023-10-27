@@ -71,10 +71,10 @@ export function Hero() {
                 className="w-[150px] h-[100px] xl:w-[248px] xl:h-[200px] mix-blend-luminosity relative"
               >
                 <Image
-                  src={"/assets/hero/bird.png"}
+                  src={"/assets/hero/guitar.png"}
                   alt="Bird"
                   fill
-                  className="object-contain"
+                  className="object-contain opacity-60"
                   sizes="(with: auto)"
                 />
               </MotionProvider>
@@ -124,7 +124,7 @@ export function Hero() {
           className="hidden xl:flex absolute right-0 top-0 before:w-[784px] before:h-[893px] before:absolute before:right-0 before:top-0 before:bg-singerOverlay before:z-10"
         >
           <Image
-            src={"/assets/hero/singer.png"}
+            src={"/assets/events/singer.jpg"}
             alt="Singer"
             width={617}
             height={893}

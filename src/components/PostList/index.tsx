@@ -35,7 +35,7 @@ export function PostList({ posts }: PostListProps) {
                 {description}
               </p>
 
-              <Link href={"#"} className="flex items-center gap-x-2 group">
+              <Link href={"#"} className="flex items-center gap-x-2 group hover:font-medium">
                 Read more
                 <BsArrowRight className="text-xl group-hover:ml-1 transition-all" />
               </Link>

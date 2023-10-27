@@ -34,9 +34,9 @@ export function EventBox({ events }: EventBoxProps) {
       className="bg-secondary/60 rounded-[10px] p-4 xl:p-12 relative"
     >
       <div className="flex flex-col xl:flex-row justify-between h-[620px] xl:h-full gap-x-4">
-        <div className="hidden xl:flex w-[400px]">
+        <div className="hidden xl:flex w-[400px] h-[501px]">
           <Image
-            src={"/assets/events/singer.png"}
+            src={"/assets/events/singer.jpg"}
             alt={"singer"}
             width={358}
             height={489}

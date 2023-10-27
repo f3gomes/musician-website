@@ -96,7 +96,7 @@ export const data = {
   albums: [
     {
       id: 1,
-      img: "/assets/albums/cover/cover-1.png",
+      img: "/assets/albums/cover/cover-1.jpg",
       name: "The Dark Side of the Moon",
       tracks: [
         {
@@ -132,7 +132,7 @@ export const data = {
 
     {
       id: 2,
-      img: "/assets/albums/cover/cover-2.png",
+      img: "/assets/albums/cover/cover-2.jpg",
       name: "Rumours",
       tracks: [
         {
@@ -168,7 +168,7 @@ export const data = {
 
     {
       id: 3,
-      img: "/assets/albums/cover/cover-3.png",
+      img: "/assets/albums/cover/cover-3.jpg",
       name: "Thriller",
       tracks: [
         {
@@ -204,7 +204,7 @@ export const data = {
 
     {
       id: 4,
-      img: "/assets/albums/cover/cover-1.png",
+      img: "/assets/albums/cover/cover-4.jpg",
       name: "The Dark Side of the Moon",
       tracks: [
         {
@@ -240,7 +240,7 @@ export const data = {
 
     {
       id: 5,
-      img: "/assets/albums/cover/cover-2.png",
+      img: "/assets/albums/cover/cover-5.jpg",
       name: "Rumours",
       tracks: [
         {
@@ -276,7 +276,7 @@ export const data = {
 
     {
       id: 6,
-      img: "/assets/albums/cover/cover-3.png",
+      img: "/assets/albums/cover/cover-6.jpg",
       name: "Thriller",
       tracks: [
         {
@@ -312,7 +312,7 @@ export const data = {
 
     {
       id: 7,
-      img: "/assets/albums/cover/cover-1.png",
+      img: "/assets/albums/cover/cover-7.jpg",
       name: "The Dark Side of the Moon",
       tracks: [
         {
@@ -410,6 +410,6 @@ export const locationSequence = [
 ];
 
 export const musicianData = {
-  name: "Ellen Star",
-  email: "artist@gmail.com"
+  name: "Mia Reynolds",
+  email: "mia-reynolds@gmail.com"
 };

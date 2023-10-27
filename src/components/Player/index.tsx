@@ -17,11 +17,12 @@ export function Player() {
           <div className="hidden w-[300px] xl:flex items-center gap-x-4">
             <div className="relative w-16 h-16">
               <Image
-                src={"/assets/player/avatar.png"}
+                src={"/assets/player/avatar.jpg"}
                 alt={""}
                 fill
                 priority
                 sizes="(max-width: 4rem)"
+                className="rounded-full"
               />
             </div>
 
