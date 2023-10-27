@@ -1,29 +1,37 @@
 "use client";
-import { data } from "../../../_data/db";
 
+import Image from "next/image";
 import { useState } from "react";
-import { Navigation, FreeMode, Thumbs, EffectCoverflow } from "swiper/modules";
+import { data } from "../../../_data/db";
+import { AlbumCard } from "../AlbumCard";
+import { MotionProvider } from "../MotionProvider";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { motion } from "framer-motion";
-import { fadeIn } from "@/utils/variants";
+import { breakpointsObject } from "@/utils/breakpoints";
+import { Navigation, FreeMode, Thumbs, EffectCoverflow } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import Image from "next/image";
-import { AlbumCard } from "../AlbumCard";
-import { breakpointsObject } from "@/utils/breakpoints";
+
+const coverflowEffect = {
+  rotate: 50,
+  stretch: 0,
+  depth: 100,
+  modifier: 1,
+  slideShadows: true,
+};
 
 export function AlbumSlider() {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
+  const modules = [FreeMode, Navigation, Thumbs, EffectCoverflow];
+
+  const thumbs = {
+    swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+  };
+
   return (
-    <motion.div
-      variants={fadeIn("up", 0.4)}
-      initial={"hidden"}
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0.3 }}
-    >
+    <MotionProvider delay={0.3} amount={0.3}>
       {
         <Swiper
           className="album-slider"
@@ -31,18 +39,9 @@ export function AlbumSlider() {
           speed={1000}
           spaceBetween={80}
           allowTouchMove={true}
-          thumbs={{
-            swiper:
-              thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
-          }}
-          modules={[FreeMode, Navigation, Thumbs, EffectCoverflow]}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
+          thumbs={thumbs}
+          modules={modules}
+          coverflowEffect={coverflowEffect}
         >
           <>
             {data.albums.map((album) => {
@@ -85,6 +84,6 @@ export function AlbumSlider() {
           );
         })}
       </Swiper>
-    </motion.div>
+    </MotionProvider>
   );
 }

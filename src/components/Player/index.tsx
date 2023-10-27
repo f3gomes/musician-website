@@ -1,20 +1,16 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { AudioPlayer } from "react-audio-play";
 import Image from "next/image";
-import { fadeIn } from "@/utils/variants";
-
+import { AudioPlayer } from "react-audio-play";
 import { musicianData } from "../../../_data/db";
+import { MotionProvider } from "../MotionProvider";
 
 export function Player() {
   return (
     <>
-      <motion.div
-        variants={fadeIn("up", 0.1)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.1 }}
+      <MotionProvider
+        delay={0.1}
+        amount={0.1}
         className="bg-gradient-to-r from-tertiary/70 to-primary/10 backdrop-blur-[15px] h-[112px] flex items-center relative z-40"
       >
         <div className="container mx-auto flex flex-col justify-between items-center xl:flex-row">
@@ -50,7 +46,7 @@ export function Player() {
             />
           </div>
         </div>
-      </motion.div>
+      </MotionProvider>
     </>
   );
 }

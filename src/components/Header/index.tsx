@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Nav } from "../Nav";
 import { MenuBtn } from "../MenuBtn";
 import { Socials } from "../Socials";
 import { NavMobile } from "../NavMobile";
+import { useEffect, useState } from "react";
 
 export function Header() {
   const [active, setActive] = useState(false);

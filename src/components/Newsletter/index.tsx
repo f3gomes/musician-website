@@ -1,8 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { SectionHeader } from "../SectionHeader";
-import { fadeIn } from "@/utils/variants";
+import { MotionProvider } from "../MotionProvider";
 
 export function Newsletter() {
   return (
@@ -17,11 +16,9 @@ export function Newsletter() {
             title="Sign up to our newsletter"
           />
 
-          <motion.div
-            variants={fadeIn("up", 0.4)}
-            initial={"hidden"}
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+          <MotionProvider
+            delay={0.4}
+            amount={0.3}
             className="relative flex items-center w-full max-w-xl"
           >
             <input
@@ -37,7 +34,7 @@ export function Newsletter() {
             >
               Subscribe
             </button>
-          </motion.div>
+          </MotionProvider>
         </div>
       </div>
     </section>

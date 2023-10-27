@@ -399,16 +399,17 @@ export const data = {
 export const locationSequence = [
   "Roma - Itália",
   3000,
-  "Pequim, China",
-  3000,
   "Fortaleza, Brazil",
   3000,
   "Paris, France",
   3000,
   "Berlin, Germany",
   3000,
+  "Tokyo, Japão",
+  3000,
 ];
 
 export const musicianData = {
   name: "Ellen Star",
+  email: "artist@gmail.com"
 };
