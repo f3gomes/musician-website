@@ -1,4 +1,13 @@
+![App Screenshot](https://raw.githubusercontent.com/fomes/musician-website/master/public/preview.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Stack
+
+- [React](https://react.dev/)
+- [NextJs](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Typescript](https://www.typescriptlang.org/)
 
 ## Getting Started
 
