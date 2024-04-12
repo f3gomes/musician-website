@@ -410,6 +410,6 @@ export const locationSequence = [
 ];
 
 export const musicianData = {
-  name: "Mia Reynolds",
-  email: "mia-reynolds@gmail.com"
+  name: "Noemia Reynolds",
+  email: "musician-email@gmail.com",
 };
